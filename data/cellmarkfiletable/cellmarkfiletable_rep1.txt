@@ -1,0 +1,11 @@
+Dnd41	CTCF	Ctcf_rep1.bam
+Dnd41	EZH2	Ezh239875_rep1.bam
+Dnd41	H2AZ	H2az_rep1.bam
+Dnd41	H3K4me1	H3k04me1_rep1.bam
+Dnd41	H3K4me2	H3k04me2_rep1.bam
+Dnd41	H3K4me3	H3k04me3_rep1.bam
+Dnd41	H3K9ac	H3k09ac_rep1.bam
+Dnd41	H3K27ac	H3k27ac_rep1.bam
+Dnd41	H3K36me3	H3k36me3_rep1.bam
+Dnd41	H4K20me1	H4k20me1_rep1.bam
+Dnd41	Control	control.bam
