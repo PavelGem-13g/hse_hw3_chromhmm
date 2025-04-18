@@ -74,11 +74,15 @@
 
 📦 Сначала проведем бинаризацию данных:
 
+```
 !java -mx5000M -jar /content/ChromHMM/ChromHMM.jar BinarizeBam -b 200  /content/ChromHMM/CHROMSIZES/hg19.txt /content/input_data/ cellmarkfiletable_rep1.txt   /content/binarizedData/rep1
+```
 
 🚀 Затем запустим обучение модели с флагом `-printposterior` для бонуса:
 
+```
 !java -mx5000M -jar /content/ChromHMM/ChromHMM.jar LearnModel -b 200  -printposterior /content/binarizedData/rep1/ /content/data/rep1 15 hg19
+```
 
 ## 📊 Результаты
 
@@ -137,12 +141,16 @@
 
 🔄 Используем внутренний парсер для преобразования:
 
+```
 !python SAGAconf/SAGAconf_parser.py --out_format bed --saga chmm /content/data/rep1/POSTERIOR/ 200 /content/SAGAconf_parser/rep1  
 !python SAGAconf/SAGAconf_parser.py --out_format bed --saga chmm /content/data/rep2/POSTERIOR/ 200 /content/SAGAconf_parser/rep2
+```
 
 ▶️ Запускаем анализ:
 
+```
 !python SAGAconf/SAGAconf.py /content/SAGAconf_parser/rep1/parsed_posterior.bed /content/SAGAconf_parser/rep2/parsed_posterior.bed /content/SAGAconf_bonus/
+```
 
 ## 📊 Таблица воспроизводимости эпигенетических состояний по SAGAconf
 
